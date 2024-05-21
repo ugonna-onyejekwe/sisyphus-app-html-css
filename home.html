@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sisyphus</title>
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- BOXICON CDN LINK -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION STARTS -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/logo.svg" alt="logo_image" />
+          </a>
+        </div>
+
+        <div class="wrapper">
+          <div class="navigators_container">
+            <div class="menu_btn close">
+              <i class="bx bx-x"></i>
+            </div>
+            <div class="search_bar">
+              <input type="search" placeholder="Search..." />
+            </div>
+
+            <div class="links">
+              <a href="#">dashboard</a>
+              <a href="#">markets</a>
+              <a href="#">wallet</a>
+            </div>
+          </div>
+
+          <div class="profile_section">
+            <a href="#" target="_blank" class="github_url">
+              <i class="bx bxl-github"></i>
+            </a>
+            <div class="profile_container">
+              <img
+                src="./assets/profile-img.png"
+                alt="profile_image"
+                class="profile_image"
+              />
+              <div class="txt">
+                <p class="user_name"></p>
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu_btn open">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="overlay"></div>
+    <!-- NAVBAR SECTION ENDS -->
+
+    <!-- MAIN SECTION STARTS -->
+    <div class="main_wrapper container">
+      <!-- chart section -->
+      <div class="chart_section"></div>
+
+      <!-- order book section -->
+      <div class="order_book_section">
+        <div class="nav">
+          <p class="active">order book</p>
+          <p>recent trades</p>
+        </div>
+
+        <!-- filter section -->
+        <div class="filter_section">
+          <div class="menu_section">
+            <!-- Menu 1 -->
+            <div class="menu active">
+              <div class="bar red"></div>
+              <div class="bar"></div>
+              <div class="bar green"></div>
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar green"></div>
+            </div>
+
+            <!-- Menu 3 -->
+            <div class="menu">
+              <div class="bar green"></div>
+              <div class="bar"></div>
+              <div class="bar red"></div>
+            </div>
+          </div>
+
+          <div class="select_section">
+            10 <i class="bx bx-chevron-down"></i>
+          </div>
+        </div>
+
+        <!--orders section  -->
+        <div class="order_section">
+          <div class="header">
+            <h4>price (USDT)</h4>
+            <h4>amount (BTC)</h4>
+            <h4>total</h4>
+          </div>
+          <div class="wrapper lost">
+            <!-- box 1 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 2 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 3-->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 4 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 5 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+          </div>
+          <div class="price_range">
+            <h3>36,641.20</h3>
+            <i class="bx bxs-up-arrow-alt"></i>
+            <h3>36,641.20</h3>
+          </div>
+          <div class="wrapper profit">
+            <!-- box 1 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 2 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 3-->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 4 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+
+            <!-- box 5 -->
+            <div class="box">
+              <p>30484.93</p>
+              <p>30484.93</p>
+              <p>30484.93</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- buy & sell section -->
+      <div class="buy_sell_section">
+        <div class="nav">
+          <p class="active">buy</p>
+          <p>sell</p>
+        </div>
+        <div class="sub_nav">
+          <p class="active">limit</p>
+          <p>market</p>
+          <p>stop-limit</p>
+        </div>
+
+        <div class="input_wrapper">
+          <div class="input_box">
+            <input type="number" placeholder="Limit price" class="price" />
+            <p>0.00usd</p>
+          </div>
+
+          <div class="input_box">
+            <input type="number" placeholder="Amount" class="amount" />
+            <p>0.00usd</p>
+          </div>
+        </div>
+        <div class="check_input">
+          <input type="checkbox" />
+          <p>post only</p>
+        </div>
+
+        <div class="total">
+          <p>total</p>
+          <p id="total_con">0.00</p>
+        </div>
+
+        <button>buy btc</button>
+      </div>
+    </div>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS -->
+    <footer>
+      <div class="container">
+        <div class="socails">
+          <i class="bx bxl-facebook-circle"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-youtube"></i>
+          <i class="bx bxl-instagram-alt"></i>
+        </div>
+        <a href="#">contact us: <span>08101330834</span></a>
+      </div>
+
+      <h3>copyright &copy; 2024. Designed by Ugonna onyejekwe</h3>
+    </footer>
+    <!-- FOOTER SECTION ENDS -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
